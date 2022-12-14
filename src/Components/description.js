@@ -4,9 +4,9 @@ export default function Description(props) {
     const {date, explanation, copyright, hdurl} = props
     return (
         <div>
-            <p>{date}</p>
+            <p>Date taken: {date}</p>
             <p>{explanation}</p>
-            {copyright && <p id='copyright'>Copyright by {copyright}</p>}
+            {copyright && <p id='copyright'>Copyright by: {copyright}</p>}
             <p>{hdurl} </p>
         </div>
     )
