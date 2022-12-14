@@ -7,7 +7,7 @@ export default function Description(props) {
             <p>Date taken: {date}</p>
             <p>{explanation}</p>
             {copyright && <p id='copyright'>Copyright by: {copyright}</p>}
-            <p>{hdurl} </p>
+            <a href={hdurl} target='_blank' >The high resolution version can be found here.</a>
         </div>
     )
 }
