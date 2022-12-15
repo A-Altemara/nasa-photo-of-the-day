@@ -28,63 +28,77 @@ time, mark, audio, video {
  .App {
   text-align: center;
   box-sizing: border-box;
-  background-color: black;
   color: darkgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+  background-color: black;
 }
 
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 header h1 {
   margin-left: 25px;
-  font-size: 3rem;
-  color: cyan;
+  font-size: 2rem;
+  color: darkgray;
 }
 
-.image {
+img {
   margin: 2%;
-  width: 150px;
-
-}
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 90vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+button{
+  color: darkgray;
+  border: 1px solid darkgray;
+  background-color: rgb(23, 23, 66);
+  width: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+p {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2%;
+}
+a{
+  margin: 3%;
+  padding-bottom: 3%;
+  color: darkgrey;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width:600px) {
+  header{
+    font-size: 1.5rem;
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width:768px) {
+  header{
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
-@media max-width:800px {
-  
+}
+
+
+@media only screen and (min-width:992px) {
+  header{
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (min-width:1200px) {
+  header{
+    font-size: 3rem;
+  }
+
 }
