@@ -4,13 +4,14 @@ import "./App.css";
 import Header from './Components/header';
 import Picture from './Components/picture';
 import Description from './Components/description';
+import test from './testData';
 
 
 
 
 function App() {
   const [date, setDate] = useState("")
-  const [pictureData, setPictureData] = useState({})
+  const [pictureData, setPictureData] = useState(test)
 
   const randomDateGenerator = () => {
     const start = "1995-06-16T00:00:00"
@@ -21,12 +22,12 @@ function App() {
   }
 
 
-  useEffect(() => {
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=cXF3Tdgf4WckzDo4fITyvAfJ2egdKtCtLOgN37hI&date=${date}`)
-      .then(res => {
-        setPictureData(res.data)
-      }).catch(err => console.error(err))
-  }, [randomDateGenerator])
+  // useEffect(() => {
+  //   axios.get(`https://api.nasa.gov/planetary/apod?api_key=cXF3Tdgf4WckzDo4fITyvAfJ2egdKtCtLOgN37hI&date=${date}`)
+  //     .then(res => {
+  //       setPictureData(res.data)
+  //     }).catch(err => console.error(err))
+  // }, [/*randomDateGenerator*/])
 
   return (
     <div className="App">
