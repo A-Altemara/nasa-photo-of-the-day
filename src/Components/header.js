@@ -6,7 +6,10 @@ export default function Header(props) {
         <header>
             <h1>Airiel's NASA APOD Generator</h1>
             <button onClick={e => setDate(randomDateGenerator())} >Random picture</button>
-            {/* specific date search bar? */}
+            {/* <form id="search">
+                <label>Pick a date after 06-16-1995</label>
+                <input id="date" name="date" value="Select a date" type="text" />
+            </form> */}
           
     </header>
     )
