@@ -44,11 +44,11 @@ header {
   align-items: center;
 }
 
-header h1 {
+/* header h1 {
   margin-left: 25px;
   font-size: 2rem;
   color: darkgray;
-}
+} */
 
 img {
   margin: 2%;

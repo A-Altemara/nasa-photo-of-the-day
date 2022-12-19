@@ -1,4 +1,19 @@
 import React, { useState, useEffect } from 'react'
+import styled from 'styled-components'
+
+const StyledHeader = styled.header`
+    margin-left: 25px;
+    font-size: 2rem;
+    color: darkgray;
+
+    @media only screen and (max-width:600px) {
+          font-size: 1.5rem;
+      }
+ 
+      @media only screen and (min-width:1200px) {
+        font-size: 3rem;
+      }
+`;
 
 export default function Header(props) {
     const {randomDateGenerator, setDate} = props
