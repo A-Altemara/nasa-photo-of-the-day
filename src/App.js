@@ -27,7 +27,7 @@ function App() {
       .then(res => {
         setPictureData(res.data)
       }).catch(err => console.error(err))
-  }, [randomDateGenerator])
+  }, [/*randomDateGenerator*/])
 
   return (
     <div className="App">
