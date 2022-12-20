@@ -44,11 +44,11 @@ header {
   align-items: center;
 }
 
-/* header h1 {
+header h1 {
   margin-left: 25px;
   font-size: 2rem;
   color: darkgray;
-} */
+}
 
 img {
   margin: 2%;
@@ -56,12 +56,12 @@ img {
 }
 
 
-/* button{
+button{
   color: darkgray;
   border: 1px solid darkgray;
   background-color: rgb(23, 23, 66);
   width: 50%;
-} */
+}
 
 p {
   align-items: center;
