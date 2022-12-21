@@ -15,6 +15,7 @@ const StyledHeaderH1 = styled.header`
 
     @media only screen and (max-width:600px) {
           font-size: 1.5rem;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
  
       @media only screen and (min-width:1200px) {
@@ -31,20 +32,22 @@ const StyledButton = styled.button`
 `
 
 export default function Header(props) {
-    const {randomDateGenerator, setDate} = props
-    // const randomListener = (evt) => {
-    //     evt => setDate(randomDateGenerator())
-    // }
+  const { randomDateGenerator, setDate } = props
+  // const randomListener = (evt) => {
+  //     evt => setDate(randomDateGenerator())
+  // }
 
-    return(
-        <StyledHeader>
-            <StyledHeaderH1>Airiel's NASA APOD Generator</StyledHeaderH1>
-            <StyledButton onClick={ evt => setDate(randomDateGenerator())} >Random picture</StyledButton>
-            {/* <form id="search">
+  return (
+    <StyledHeader>
+      <StyledHeaderH1>Airiel's NASA APOD Generator</StyledHeaderH1>
+      <StyledButton onClick={() => randomDateGenerator()} >Random picture</StyledButton>
+
+      {/* {document.removeEventListener('click', randomListener)} */}
+    </StyledHeader>
+  )
+}
+
+{/* <form id="search">
                 <label>Pick a date after 06-16-1995</label>
                 <input id="date" name="date" value="Select a date" type="text" />
             </form> */}
-          {/* {document.removeEventListener('click', randomListener)} */}
-    </StyledHeader>
-    )
-}

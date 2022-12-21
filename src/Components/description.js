@@ -10,7 +10,8 @@ const StyledA = styled.a`
     margin: 3%;
     padding-bottom: 3%;
     color: darkgrey;
-    background-color: black;
+
+    width: 100vw
 `
 
 export default function Description(props) {

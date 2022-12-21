@@ -71,7 +71,7 @@ a{
   margin: 3%;
   padding-bottom: 3%;
   color: darkgrey;
-  background-color: black;
+  /* background-color: black; */
 }
 
 @media only screen and (max-width:600px) {

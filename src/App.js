@@ -16,18 +16,17 @@ function App() {
   const randomDateGenerator = () => {
     const start = "1995-06-16T00:00:00"
     const startDate = new Date(start).getTime()
-    // console.log((new Date(startDate + (Math.random() * (new Date(Date.now()).getTime() - startDate))).toISOString().substring(0, 10)))
-    return ((new Date(startDate + (Math.random() * (new Date(Date.now()).getTime() - startDate))).toISOString().substring(0, 10)))
-
+    console.log((new Date(startDate + (Math.random() * (new Date(Date.now()).getTime() - startDate))).toISOString().substring(0, 10)))
+    setDate(new Date(startDate + (Math.random() * (new Date(Date.now()).getTime() - startDate))).toISOString().substring(0, 10))
   }
 
-
   useEffect(() => {
+    console.log('useEffect runs: ' + date)
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=cXF3Tdgf4WckzDo4fITyvAfJ2egdKtCtLOgN37hI&date=${date}`)
       .then(res => {
         setPictureData(res.data)
       }).catch(err => console.error(err))
-  }, [/*randomDateGenerator*/])
+  }, [date])
 
   return (
     <div className="App">
