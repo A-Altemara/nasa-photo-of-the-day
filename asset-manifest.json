@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/http//A-Altemara.github.io/nasa-photo-of-the-day/static/css/main.dfe43681.css",
+    "main.js": "/http//A-Altemara.github.io/nasa-photo-of-the-day/static/js/main.ec189123.js",
+    "index.html": "/http//A-Altemara.github.io/nasa-photo-of-the-day/index.html",
+    "main.dfe43681.css.map": "/http//A-Altemara.github.io/nasa-photo-of-the-day/static/css/main.dfe43681.css.map",
+    "main.ec189123.js.map": "/http//A-Altemara.github.io/nasa-photo-of-the-day/static/js/main.ec189123.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfe43681.css",
+    "static/js/main.ec189123.js"
+  ]
+}
