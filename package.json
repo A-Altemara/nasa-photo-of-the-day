@@ -2,7 +2,7 @@
   "name": "nasa-apod",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://A-Altemara.github.io/nasa-photo-of-the-day/",
+  "homepage": "https://a-altemara.github.io/nasa-photo-of-the-day/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
